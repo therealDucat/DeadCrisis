@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: MapDoorShit
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-63.13345,"y":-134.6093},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-475.0,"y":-515.0},"guid":"4077942b-7f2e-4a78-bdfd-45af55652ebc","$version":"A","$type":"Bolt.Start","$id":"9"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"Unlock","$type":"System.String"}},"position":{"x":-516.0,"y":-308.0},"guid":"0ab8cde2-3dd3-4372-97e5-6049a76a43fa","$version":"A","$type":"Bolt.CustomEvent","$id":"11"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"Locked","$type":"System.String"}},"position":{"x":-508.0,"y":-74.0},"guid":"ddb53a06-5a79-4ce1-85f5-01f1d09c92c6","$version":"A","$type":"Bolt.CustomEvent","$id":"13"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"Unknown":{"$content":true,"$type":"System.Boolean"},"Unlocked":{"$content":false,"$type":"System.Boolean"},"Locked":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-310.0,"y":-516.0},"guid":"b704a213-489b-4d26-a48b-1013301342aa","$version":"A","$type":"Bolt.SuperUnit","$id":"15"},{"nest":{"source":"Macro","macro":1,"embed":null},"defaultValues":{"Unknown":{"$content":false,"$type":"System.Boolean"},"Unlocked":{"$content":true,"$type":"System.Boolean"},"Locked":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-312.0,"y":-303.0},"guid":"ea16dac3-722d-4111-b36a-64d4801eacd3","$version":"A","$type":"Bolt.SuperUnit","$id":"18"},{"nest":{"source":"Macro","macro":2,"embed":null},"defaultValues":{"Unknown":{"$content":false,"$type":"System.Boolean"},"Unlocked":{"$content":false,"$type":"System.Boolean"},"Locked":{"$content":true,"$type":"System.Boolean"}},"position":{"x":-314.0,"y":-69.0},"guid":"b9df3253-68f9-445e-816f-293749721424","$version":"A","$type":"Bolt.SuperUnit","$id":"21"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"in","guid":"edf1121b-de02-44e9-a902-d2b2c1652898","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"in","guid":"824d1840-d325-4051-89a0-f1f1d3aab5cb","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"21"},"destinationKey":"in","guid":"d2847faf-1970-4857-a52f-a321ea970b6c","$type":"Bolt.ControlConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 6c3b25243b66cc548b4b4cab241a7a96, type: 2}
+    - {fileID: 11400000, guid: 6c3b25243b66cc548b4b4cab241a7a96, type: 2}
+    - {fileID: 11400000, guid: 6c3b25243b66cc548b4b4cab241a7a96, type: 2}

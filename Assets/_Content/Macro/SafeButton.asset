@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SafeButton
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":520.5671,"y":-247.1974},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":218.0,"y":-265.0},"guid":"706d9ae0-9266-4943-ac83-e82c6557ca32","$version":"A","$type":"Bolt.OnButtonClick","$id":"9"},{"argumentCount":1,"defaultValues":{"name":{"$content":"buttonPressed","$type":"System.String"},"target":null},"position":{"x":793.0,"y":-282.0},"guid":"7c0f4c1e-f7c0-4190-b4d8-b94652625c1c","$version":"A","$type":"Bolt.TriggerCustomEvent","$id":"11"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"number","$type":"System.String"},"object":null},"position":{"x":605.0,"y":-181.0},"guid":"82d3bf25-f419-4cbd-b14e-fa565ea7a3e6","$version":"A","$type":"Bolt.GetVariable","$id":"13"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Canvas","$type":"System.String"}},"position":{"x":421.0,"y":-307.0},"guid":"1d17ad60-3185-41f4-aaaf-2b96444685f2","$version":"A","$type":"Bolt.GetVariable","$id":"15"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"SafeUI","$type":"System.String"},"object":null},"position":{"x":605.0,"y":-328.0},"guid":"776d6fbd-2a28-4b3a-89c5-1714788d4e81","$version":"A","$type":"Bolt.GetVariable","$id":"17"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"ObjectName","$type":"System.String"},"object":null},"position":{"x":408.0,"y":-421.0},"guid":"59fd0232-583e-4e2c-bc45-7aee785f8169","$version":"A","$type":"Bolt.GetVariable","$id":"19"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"ecc3e8db-3f8e-4fd8-ae40-151297aaf7f7","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"argument_0","guid":"52a6be0b-a025-4aac-9037-37a43fa4e558","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"17"},"destinationKey":"object","guid":"d26ae766-4415-45cd-a4e1-1b18d7582ef5","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"23d8e92b-3ac0-4a8f-85ef-3548398b0671","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"17"},"destinationKey":"name","guid":"918b20b2-21b5-491b-8ff0-dc4d348820d0","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

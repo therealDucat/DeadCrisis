@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SelfDestroy
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":113.0,"y":-59.0},"zoom":1.0,"elements":[{"coroutine":true,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"79ef465f-1064-4d13-863f-3744748744a0","$version":"A","$type":"Bolt.Start","$id":"9"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object","System.Single"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null,"%t":{"$content":5.0,"$type":"System.Single"}},"position":{"x":263.0,"y":-147.0},"guid":"ce90be72-8ff4-4aa6-ab21-b8f87b23efbf","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"defaultValues":{},"position":{"x":61.0,"y":-56.0},"guid":"fec33f34-3967-45a4-9021-86c533492142","$version":"A","$type":"Bolt.Self","$id":"14"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"40920a5d-b134-44cd-bcbe-1c5fd1759998","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"self","destinationUnit":{"$ref":"11"},"destinationKey":"%obj","guid":"a08ae8e6-c059-451e-ad91-2c3a04ebc143","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
