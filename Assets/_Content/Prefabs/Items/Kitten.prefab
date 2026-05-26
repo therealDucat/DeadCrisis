@@ -105,7 +105,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8231492419757373994}
   - component: {fileID: 6910327513384049693}
-  - component: {fileID: 280949128684134416}
   m_Layer: 6
   m_Name: AudioSource
   m_TagString: Untagged
@@ -224,49 +223,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &280949128684134416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3476821262625287133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc64aca77a4bc84f9a15ccd92d26878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  directBinaural: 1
-  interpolation: 1
-  physicsBasedAttenuation: 0
-  airAbsorption: 1
-  dipoleWeight: 0
-  dipolePower: 0
-  occlusionMode: 3
-  occlusionMethod: 1
-  sourceRadius: 0.1
-  occlusionSamples: 16
-  directMixLevel: 1
-  reflections: 0
-  indirectBinaural: 1
-  physicsBasedAttenuationForIndirect: 0
-  indirectMixLevel: 0.25
-  simulationType: 0
-  uniqueIdentifier: 
-  avoidSilenceDuringInit: 0
-  overrideHRTFIndex: 0
-  hrtfIndex: 0
-  bakingRadius: 16
-  useAllProbeBoxes: 0
-  probeBoxes: []
-  bakedProbeNames: []
-  bakedProbeDataSizes: 
-  bakedDataSize: 0
-  bakedStatsFoldout: 0
-  bakeToggle: 0
-  bakedDataIdentifier:
-    identifier: 0
-    type: 0
 --- !u!1 &8637338974250532733
 GameObject:
   m_ObjectHideFlags: 0
