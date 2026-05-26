@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class WeaponStats : MonoBehaviour
 {
@@ -27,5 +28,10 @@ public class WeaponStats : MonoBehaviour
     public Text bulletsAmountText;
     public Transform shootSpot;
     public Transform clipTransform;
+	
+	[Header("SOUNDS")]
+    public EventReference shoot;
+	public EventReference noAmmo;
+	public EventReference reload;
     
 }

@@ -53,7 +53,7 @@
 			<destination>{baaff056-3dcd-4b2a-b849-32ef55b9b9f9}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{af9d027a-3a1f-49a8-a9ef-4cbe20673632}</destination>
+			<destination>{009ebac0-e5a9-4e69-8d37-6bdc9d8c6f45}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{409aac67-7970-497b-aa95-b5e4707497e0}">
@@ -197,7 +197,6 @@
 		<property name="name">
 			<value>SourcePos</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -206,7 +205,6 @@
 		<property name="name">
 			<value>OverallGain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>
@@ -535,7 +533,6 @@
 		<property name="name">
 			<value>SimOutputs</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>0</value>
 		</property>
@@ -552,7 +549,6 @@
 		<property name="name">
 			<value>DistRange</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>

@@ -7310,7 +7310,7 @@ PrefabInstance:
       addedObject: {fileID: 6429972685327263806}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b48fa1e0b23de441b8205b2c7f667ae, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5186603123689703797}
+      addedObject: {fileID: 8593076792923308287}
   m_SourcePrefab: {fileID: 100100000, guid: 9b48fa1e0b23de441b8205b2c7f667ae, type: 3}
 --- !u!4 &157446258919369702 stripped
 Transform:
@@ -7774,7 +7774,7 @@ MonoBehaviour:
       position: {x: 0, y: 0.01, z: 0}
       rotation: {x: 0, y: 0, z: 0}
     m_Visible: 1
---- !u!114 &5186603123689703797
+--- !u!114 &8593076792923308287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7802,18 +7802,18 @@ MonoBehaviour:
     Path: 
   stepSounds:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -551007495
+      Data2: 1314739812
+      Data3: 2081554858
+      Data4: -778425478
+    Path: event:/Character/PlayerWalk
   swapWeaponSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1182083409
+      Data2: 1208149659
+      Data3: 2042151302
+      Data4: -1475422435
+    Path: event:/Weapons/WeaponSwap
 --- !u!4 &9061338506973623752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8307988961788090847, guid: 9b48fa1e0b23de441b8205b2c7f667ae, type: 3}
