@@ -25,8 +25,6 @@ namespace FMODUnity
         private const string StringBankExtension = "strings.bank";
         private const string BankExtension = "bank";
 
-        private static HashSet<string> newBankPaths = new HashSet<string>();
-
 #if UNITY_EDITOR
         [MenuItem("FMOD/Refresh Banks", priority = 1)]
         public static void RefreshBanks()
@@ -420,7 +418,7 @@ namespace FMODUnity
                         FMOD.GUID guid;
                         eventDesc.getID(out guid);
 
-                        EditorEventRef eventRef = eventCache.EditorEvents.Find((x) => string.Compare(x.Path, path, StringComparison.CurrentCultureIgnoreCase) == 0);
+                        EditorEventRef eventRef = eventCache.EditorEvents.Find((x) => x.Path == path);
                         if (eventRef == null)
                         {
                             eventRef = ScriptableObject.CreateInstance<EditorEventRef>();
@@ -571,7 +569,6 @@ namespace FMODUnity
             BuildStatusWatcher.OnBuildStarted += () => {
                 BuildTargetChanged();
                 CopyToStreamingAssets(EditorUserBuildSettings.activeBuildTarget);
-                ApplyFMODLabel();
             };
             BuildStatusWatcher.OnBuildEnded += () => {
                 UpdateBankStubAssets(EditorUserBuildSettings.activeBuildTarget);
@@ -656,7 +653,7 @@ namespace FMODUnity
 #pragma warning restore 0618
                 {
                     RuntimeUtils.DebugLogWarningFormat("FMOD: A component of type {0} in scene '{1}' on GameObject '{2}' has an "
-                        + "obsolete [FMODUnity.EventRef] attribute on field {3}. {4}",
+                        + "obsolete [EventRef] attribute on field {3}. {4}",
                         type.Name, scene.name, EditorUtils.GameObjectPath(behaviour), field.Name,
                         UpdaterInstructions);
                 }
@@ -844,7 +841,8 @@ namespace FMODUnity
 
                         string assetString = targetPathFull.Replace(Application.dataPath, "Assets");
                         AssetDatabase.ImportAsset(assetString);
-                        newBankPaths.Add(assetString);
+                        UnityEngine.Object obj = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetString);
+                        AssetDatabase.SetLabels(obj, new string[] { FMODLabel });
                     }
                 }
 
@@ -1053,13 +1051,9 @@ namespace FMODUnity
         private static void BuildTargetChanged()
         {
             RefreshBanks();
-#if UNITY_ANDROID
-#if UNITY_2023_1_OR_NEWER
-            Settings.Instance.AndroidUseOBB = PlayerSettings.Android.splitApplicationBinary;
-#else
+            #if UNITY_ANDROID
             Settings.Instance.AndroidUseOBB = PlayerSettings.Android.useAPKExpansionFiles;
-#endif //UNITY_2023_1_OR_NEWER
-#endif //UNITY_ANDROID
+            #endif
         }
 
         private static void OnCacheChange()
@@ -1365,20 +1359,6 @@ namespace FMODUnity
                     AssetDatabase.MoveAssetToTrash(assetPath);
                 }
             }
-        }
-
-        private static void ApplyFMODLabel()
-        {
-            foreach (string assetPath in newBankPaths)
-            {
-                if (!AssetHasLabel(assetPath, FMODLabel))
-                {
-                    UnityEngine.Object obj = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPath);
-                    AssetDatabase.SetLabels(obj, new string[] { FMODLabel });
-                }
-            }
-
-            newBankPaths.Clear();
         }
     }
 }
