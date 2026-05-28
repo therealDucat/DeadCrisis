@@ -124,7 +124,7 @@
 	</object>
 	<object class="MultiSound" id="{f8a06297-c9c1-4d7a-8d6f-ee3eec6edced}">
 		<property name="start">
-			<value>0.29999999999999999</value>
+			<value>0.41999999999999998</value>
 		</property>
 		<property name="length">
 			<value>1.1799999999999999</value>

@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &412080
 Transform:
@@ -92,7 +92,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124612}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6584a91cf554ad241a3b2682da097e2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -117,6 +117,10 @@ PrefabInstance:
     - target: {fileID: 2500222672241957659, guid: fc66d90f64cc5714f900f07f02f0b881, type: 3}
       propertyPath: m_Name
       value: MapShit_sidewalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500222672241957659, guid: fc66d90f64cc5714f900f07f02f0b881, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7990497109742278789, guid: fc66d90f64cc5714f900f07f02f0b881, type: 3}
       propertyPath: m_RootOrder

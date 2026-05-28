@@ -5875,6 +5875,7 @@ GameObject:
   - component: {fileID: 968589365}
   - component: {fileID: 968589367}
   - component: {fileID: 7326569855329474941}
+  - component: {fileID: 5093787122184749093}
   m_Layer: 8
   m_Name: Character_Dummy_Male_01
   m_TagString: Untagged
@@ -6005,30 +6006,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"AudioSource","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"FootSteps","value":{"$content":[1,2,3,4],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"HeadShotSounds","value":{"$content":[5,6,7],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"ImpactSounds","value":{"$content":[8,9,10,11,12],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"StandupSounds","value":{"$content":[13,14,15,16],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
-      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"AudioSourceObj","value":{"$content":17,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 4007320574991242334}
-    - {fileID: 8300000, guid: 655e443a0bbcc884d9e0c58ce0d0fb27, type: 3}
-    - {fileID: 8300000, guid: 8c1b00ad2013e154bb4f28c8e60e4fc9, type: 3}
-    - {fileID: 8300000, guid: 3b5c304d48d39154fad60387801f0290, type: 3}
-    - {fileID: 8300000, guid: ca6b9726f5a598545ba4aba7ba55305a, type: 3}
-    - {fileID: 8300000, guid: c3f8a323fa7c6b646b61c4968103a703, type: 3}
-    - {fileID: 8300000, guid: 258b85eb43bec484aa01a7f738c43f39, type: 3}
-    - {fileID: 8300000, guid: b93c940b709b20b4a86ae45b33f3c614, type: 3}
-    - {fileID: 8300000, guid: ac8b46e9fd6f99444b3867e4402f08f2, type: 3}
-    - {fileID: 8300000, guid: bf1b9126fd761d74f8138ec473151c24, type: 3}
-    - {fileID: 8300000, guid: 1080fe62851242f46a0d11afd44b8365, type: 3}
-    - {fileID: 8300000, guid: 07cf85f14ab4ff946ab442563a4d98f3, type: 3}
-    - {fileID: 8300000, guid: 11c3ff8c7ad1bd14fb21e6e8aa631f94, type: 3}
-    - {fileID: 8300000, guid: f2b5e47bf37f41148a978005f6d0dee7, type: 3}
-    - {fileID: 8300000, guid: 07333029924a3004aa41d7143e9f62be, type: 3}
-    - {fileID: 8300000, guid: ed7281e24cb3dc0429c5bcc833776ada, type: 3}
-    - {fileID: 8300000, guid: 0e2b475fc5f3cfc4980d0dcc4083e219, type: 3}
-    - {fileID: 2743977316621647488}
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!114 &968589367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6097,6 +6076,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5093787122184749093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317546272293950252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbba4dab121a65a4f933ea4143a2b719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSound:
+    Guid:
+      Data1: 1768352578
+      Data2: 1302328610
+      Data3: 1677022896
+      Data4: 115524275
+    Path: event:/Character/Enemy/BodyImpact
+  headOffSound:
+    Guid:
+      Data1: 196488728
+      Data2: 1252620030
+      Data3: -1505751130
+      Data4: -543534641
+    Path: event:/Character/Enemy/BloodSplat
+  fallDeadSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  stepSounds:
+    Guid:
+      Data1: 1463352208
+      Data2: 1150792175
+      Data3: 1380526258
+      Data4: 6420735
+    Path: event:/Character/EnemyWalk
+  standUpSound:
+    Guid:
+      Data1: -964731894
+      Data2: 1321702534
+      Data3: -865508417
+      Data4: 1637726485
+    Path: event:/Character/Enemy/ZombieStandup
+  calmAmbientSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  spotPlayerSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  chaseSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1374756005167478690
 GameObject:
   m_ObjectHideFlags: 0

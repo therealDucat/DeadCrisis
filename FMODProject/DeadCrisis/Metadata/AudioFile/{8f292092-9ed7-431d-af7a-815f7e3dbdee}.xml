@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8f292092-9ed7-431d-af7a-815f7e3dbdee}">
+		<property name="assetPath">
+			<value>StandUp03.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.3061224489795917</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4c43130b-9186-4fb6-9d65-a9acdac70927}</destination>
+		</relationship>
+	</object>
+</objects>

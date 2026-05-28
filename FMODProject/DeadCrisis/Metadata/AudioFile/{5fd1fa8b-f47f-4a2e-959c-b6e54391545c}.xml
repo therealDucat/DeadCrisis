@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5fd1fa8b-f47f-4a2e-959c-b6e54391545c}">
+		<property name="assetPath">
+			<value>CASING 9mm Hard Surface RR1 (mono).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.94018140589569166</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4c43130b-9186-4fb6-9d65-a9acdac70927}</destination>
+		</relationship>
+	</object>
+</objects>
